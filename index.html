@@ -34,100 +34,81 @@
             --wheat-fill: #8b7c66;
         }
 
-        header {
-            position: absolute;
-            top: 32px;
-            left: 32px;
-            display: flex;
-            align-items: center;
-            gap: 16px;
-        }
-
-        header img {
-            width: 44px;
-            height: 44px;
-        }
-
-        header .title-block {
-            display: flex;
-            flex-direction: column;
-            gap: 4px;
-        }
-
-        header .name {
-            font-size: 1.35rem;
-            font-weight: 600;
-            letter-spacing: 0.5px;
-        }
-
-        header .tag {
-            font-size: 0.8rem;
-            color: var(--subtext);
-        }
-
+        /* MAIN CENTER LAYOUT */
         .center {
-            max-width: 700px;
+            max-width: 800px;
             margin: auto;
             text-align: center;
             padding: 40px;
         }
 
         .headline {
-            font-size: 2.6rem;
-            font-weight: 600;
-            margin-bottom: 18px;
+            font-size: 4.4rem;
+            font-weight: 700;
+            letter-spacing: 1px;
+            margin-bottom: 14px;
         }
 
         .sub {
-            font-size: 1.15rem;
+            font-size: 1.6rem;
             color: var(--subtext);
-            margin-bottom: 40px;
+            font-weight: 400;
+            margin-bottom: 32px;
         }
 
         .under {
-            font-size: 0.95rem;
+            font-size: 1.2rem;
             color: var(--subtext);
             margin-bottom: 60px;
+            opacity: 0.9;
         }
 
+        /* CONTACT SECTION */
         .contact {
-            font-size: 0.95rem;
-            line-height: 1.7;
+            font-size: 1.05rem;
+            line-height: 1.8;
+            margin-top: 20px;
+            opacity: 0.95;
         }
 
         .contact a {
             color: var(--text);
             text-decoration: none;
             border-bottom: 1px solid rgba(0,0,0,0.12);
+            padding-bottom: 2px;
         }
 
         .contact a:hover {
             opacity: 0.6;
         }
+
+        /* SUBTLE FLAIR */
+        .flare {
+            width: 80px;
+            height: 2px;
+            background: var(--wheat-stroke);
+            opacity: 0.25;
+            margin: 28px auto 40px auto;
+            border-radius: 2px;
+        }
+
     </style>
 </head>
 
 <body>
 
-    <header>
-        <!-- Replace src with your wheat icon -->
-        <img src="PrairieLogoNew.png" alt="Prairie Logo">
-        <div class="title-block">
-            <div class="name">Prairie</div>
-            <div class="tag">Intelligence, Open by Design</div>
-        </div>
-    </header>
-
     <div class="center">
         <div class="headline">Prairie</div>
         <div class="sub">Intelligence, Open by Design</div>
+
+        <div class="flare"></div>
+
         <div class="under">This site is currently under construction.</div>
 
         <div class="contact">
-            <div>Contact:</div>
+            <div><a href="mailto:callahan@prairielabs.ai">callahan@prairielabs.ai</a></div>
             <div><a href="mailto:hello@prairielabs.ai">hello@prairielabs.ai</a></div>
             <div><a href="mailto:invest@prairielabs.ai">invest@prairielabs.ai</a></div>
-            <div><a href="mailto:press@prairielabs.ai">press@prairielabs.ai</a></div>
         </div>
     </div>
 
