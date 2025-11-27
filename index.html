@@ -1,211 +1,135 @@
 <!DOCTYPE html>
 <html lang="en" data-theme="light">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Prairie Labs</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prairie — In Progress</title>
+    <style>
+        /* RESET */
+        * { margin: 0; padding: 0; box-sizing: border-box; }
 
-    <meta name="description" content="Prairie Labs builds simulation-driven software. Intelligence, open by design." />
-    <meta property="og:title" content="Prairie Labs" />
-    <meta property="og:description" content="Simulation-driven software. Intelligence, open by design." />
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://prairielabs.ai" />
+        body {
+            font-family: "Inter", sans-serif;
+            background: var(--bg1);
+            color: var(--text);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
 
-    <link rel="icon" href="/favicon.png" />
+        :root[data-theme="light"] {
+            --text: #2e261c;
+            --subtext: #675b4a;
+            --bg1: #f9f6ef;
+            --wheat-stroke: #4f412f;
+            --wheat-fill: #c6ab7d;
+        }
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Lora:wght@400;500&display=swap"
-        rel="stylesheet"
-    />
+        :root[data-theme="dark"] {
+            --text: #f2eadf;
+            --subtext: #d9ccb7;
+            --bg1: #1d1a16;
+            --wheat-stroke: #d9ccb7;
+            --wheat-fill: #8b7c66;
+        }
 
-    <link rel="stylesheet" href="./style.css" />
+        header {
+            position: absolute;
+            top: 32px;
+            left: 32px;
+            display: flex;
+            align-items: center;
+            gap: 16px;
+        }
+
+        header img {
+            width: 44px;
+            height: 44px;
+        }
+
+        header .title-block {
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+        }
+
+        header .name {
+            font-size: 1.35rem;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+        }
+
+        header .tag {
+            font-size: 0.8rem;
+            color: var(--subtext);
+        }
+
+        .center {
+            max-width: 700px;
+            margin: auto;
+            text-align: center;
+            padding: 40px;
+        }
+
+        .headline {
+            font-size: 2.6rem;
+            font-weight: 600;
+            margin-bottom: 18px;
+        }
+
+        .sub {
+            font-size: 1.15rem;
+            color: var(--subtext);
+            margin-bottom: 40px;
+        }
+
+        .under {
+            font-size: 0.95rem;
+            color: var(--subtext);
+            margin-bottom: 60px;
+        }
+
+        .contact {
+            font-size: 0.95rem;
+            line-height: 1.7;
+        }
+
+        .contact a {
+            color: var(--text);
+            text-decoration: none;
+            border-bottom: 1px solid rgba(0,0,0,0.12);
+        }
+
+        .contact a:hover {
+            opacity: 0.6;
+        }
+    </style>
 </head>
 
 <body>
 
-    <!-- PARALLAX BACKGROUND -->
-    <div class="bg bg-back"></div>
-    <div class="bg bg-mid"></div>
-    <div class="bg bg-front"></div>
-
-    <!-- NAV -->
-    <header class="site-header fade">
-        <a href="#top" class="brand-mark">
-            <svg class="wheat-small" viewBox="0 0 80 160">
-                <path class="stem" d="M40 25 L40 150"/>
-                <path class="grain" d="M40 25 L34 35 L40 45 L46 35 Z"/>
-                <path class="grain" d="M40 42 L34 52 L40 62 L46 52 Z"/>
-            </svg>
-            <span class="brand-word">Prairie Labs</span>
-        </a>
-
-        <nav class="nav-links">
-            <a href="#product">Product</a>
-            <a href="#roadmap">Roadmap</a>
-            <a href="#about">About</a>
-            <a href="#press">Press</a>
-            <a href="#jobs">Jobs</a>
-        </nav>
-
-        <button id="modeToggle" class="mode-toggle">☀️</button>
+    <header>
+        <!-- Replace src with your wheat icon -->
+        <img src="PrairieLogoNew.png" alt="Prairie Logo">
+        <div class="title-block">
+            <div class="name">Prairie</div>
+            <div class="tag">Intelligence, Open by Design</div>
+        </div>
     </header>
 
-    <!-- HERO -->
-    <section id="top" class="hero-main fade">
-        <div class="hero-logo">
-            <svg class="wheat" viewBox="0 0 80 160">
-                <path class="stem" d="M40 20 L40 150"/>
-                <path class="leaf" d="M40 40 C10 55, 10 75, 40 90"/>
-                <path class="leaf" d="M40 60 C70 75, 70 95, 40 110"/>
-                <path class="grain" d="M40 20 L33 32 L40 44 L47 32 Z"/>
-                <path class="grain" d="M40 38 L33 50 L40 62 L47 50 Z"/>
-                <path class="grain" d="M40 56 L33 68 L40 80 L47 68 Z"/>
-            </svg>
+    <div class="center">
+        <div class="headline">Prairie</div>
+        <div class="sub">Intelligence, Open by Design</div>
+        <div class="under">This site is currently under construction.</div>
+
+        <div class="contact">
+            <div>Contact:</div>
+            <div><a href="mailto:hello@prairielabs.ai">hello@prairielabs.ai</a></div>
+            <div><a href="mailto:invest@prairielabs.ai">invest@prairielabs.ai</a></div>
+            <div><a href="mailto:press@prairielabs.ai">press@prairielabs.ai</a></div>
         </div>
-
-        <h1 class="hero-title">Intelligence, Open by Design.</h1>
-        <p class="hero-subtitle">
-            Prairie Labs builds simulation-driven software that makes complex systems feel clear,
-            legible, and playable.
-        </p>
-
-        <div class="hero-cta-row">
-            <a href="#product" class="btn-primary">Explore the first product</a>
-            <a href="mailto:hello@prairielabs.ai" class="btn-ghost">Contact</a>
-        </div>
-    </section>
-
-    <!-- PRODUCT -->
-    <section id="product" class="section fade">
-        <h2 class="section-title">Our First Product</h2>
-        <p class="section-desc">
-            A text-native historical simulation set in the Roman world, built for replayability, depth, and virality.
-        </p>
-
-        <div class="pillars">
-            <div class="pillar">
-                <h4>Text-native</h4>
-                <p>Fast, frictionless, and infinitely replayable.</p>
-            </div>
-            <div class="pillar">
-                <h4>System-deep</h4>
-                <p>A tuned simulation engine beneath every choice.</p>
-            </div>
-            <div class="pillar">
-                <h4>Built to scale</h4>
-                <p>Extensible into strategy, education, and scenario training.</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- ROADMAP -->
-    <section id="roadmap" class="section fade">
-        <h2 class="section-title">Roadmap</h2>
-        <div class="roadmap">
-            <div class="roadmap-item">
-                <h4>Phase 1 — Pleb Life</h4>
-                <p>Launch text-based simulation and prove engagement loop.</p>
-            </div>
-            <div class="roadmap-item">
-                <h4>Phase 2 — Rome’s Dilemma</h4>
-                <p>Macro-level scenario engine: governance, trade, war, consequence.</p>
-            </div>
-            <div class="roadmap-item">
-                <h4>Phase 3 — Prairie Platform</h4>
-                <p>A simulation engine that scales beyond games.</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- ABOUT -->
-    <section id="about" class="section fade">
-        <h2 class="section-title">About Prairie Labs</h2>
-        <p class="section-desc">
-            Prairie is a simulation company. We build for clarity, not spectacle — systems over noise, legibility over flash.
-        </p>
-        <p class="body-block">
-            The goal is simple: make powerful simulations accessible to more than institutions.
-            We start with history. We scale into broader systems.
-        </p>
-        <p class="founder-signature">— Callahan Stroud, Founder & CEO</p>
-    </section>
-
-    <!-- PRESS -->
-    <section id="press" class="section fade">
-        <h2 class="section-title">Press & Media</h2>
-        <p class="section-desc">
-            For press inquiries, partnerships, or early briefings, contact our team.
-        </p>
-
-        <div class="press-grid">
-            <div class="press-card">
-                <h4>Contact</h4>
-                <p>Email: <a href="mailto:press@prairielabs.ai">press@prairielabs.ai</a></p>
-            </div>
-            <div class="press-card">
-                <h4>Topics</h4>
-                <p>Simulation, systems thinking, historical design, interactive education.</p>
-            </div>
-            <div class="press-card">
-                <h4>Assets (coming soon)</h4>
-                <ul>
-                    <li>Logos & brand marks</li>
-                    <li>Product screenshots</li>
-                    <li>Founder bio</li>
-                </ul>
-            </div>
-        </div>
-    </section>
-
-    <!-- JOBS -->
-    <section id="jobs" class="section fade">
-        <h2 class="section-title">Jobs</h2>
-        <p class="section-desc">
-            Prairie is early. We hire slowly, deliberately, and value systems thinkers across disciplines.
-        </p>
-        <p class="body-block">
-            If you build simulations, design experiences, or work in education, strategy, or
-            infrastructure — reach out.
-        </p>
-        <p class="body-block">
-            Email: <a href="mailto:jobs@prairielabs.ai">jobs@prairielabs.ai</a>
-        </p>
-    </section>
-
-    <!-- SIGNUP -->
-    <section id="signup" class="section fade signup">
-        <h2 class="section-title">Get updates</h2>
-        <p class="section-desc">We’ll only email when there's something real.</p>
-
-        <form onsubmit="event.preventDefault(); alert('Thanks — you’re on the list.');" class="signup-form">
-            <input type="email" placeholder="email@domain.com" required />
-            <button type="submit">Notify Me</button>
-        </form>
-    </section>
-
-    <!-- FOOTER -->
-    <footer class="site-footer fade">
-        <p>© 2025 Prairie Labs, Inc.</p>
-    </footer>
-
-    <!-- DARK MODE -->
-    <script>
-        const root = document.documentElement;
-        const toggle = document.getElementById("modeToggle");
-        
-        if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
-            root.setAttribute("data-theme", "dark");
-            toggle.textContent = "🌙";
-        }
-
-        toggle.addEventListener("click", () => {
-            const next = root.getAttribute("data-theme") === "light" ? "dark" : "light";
-            root.setAttribute("data-theme", next);
-            toggle.textContent = next === "dark" ? "🌙" : "☀️";
-        });
-    </script>
+    </div>
 
 </body>
 </html>
