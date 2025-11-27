@@ -1,51 +1,120 @@
-body {
+/* GLOBAL RESET */
+* {
     margin: 0;
     padding: 0;
-    background: #f5f2eb;
+    box-sizing: border-box;
+}
+
+/* BACKGROUND */
+body {
     font-family: "Inter", sans-serif;
-    color: #2a241a;
+    color: #2e261c;
+    position: relative;
+    overflow-x: hidden;
+    min-height: 100vh;
 }
 
-.wrap {
-    max-width: 700px;
-    margin: 12vh auto;
-    padding: 0 20px;
+/* Prairie Horizon Gradient */
+.bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+        180deg,
+        #f9f6ef 0%,
+        #f2ecdf 40%,
+        #e8e0cf 75%,
+        #dcd1b4 100%
+    );
+    z-index: -1;
+}
+
+/* LAYOUT */
+header, main, footer {
     text-align: center;
+    padding: 20px;
+    max-width: 750px;
+    margin: 0 auto;
 }
 
-.logo {
-    font-size: 60px;
-    font-weight: 700;
+/* LOGO / BRAND */
+.logo-mark {
+    font-size: 48px;
     margin-bottom: 10px;
-    letter-spacing: -1px;
+}
+
+.brand {
+    font-family: "Lora", serif;
+    font-size: 48px;
+    font-weight: 500;
+    letter-spacing: -0.5px;
+    margin-bottom: 6px;
+    color: #2e261c;
 }
 
 .tagline {
-    font-size: 22px;
-    font-weight: 400;
+    font-size: 20px;
+    font-weight: 300;
+    color: #675b4a;
     margin-bottom: 40px;
-    color: #5c4e3b;
 }
 
+/* BODY TEXT */
 .desc {
     font-size: 18px;
-    line-height: 1.5;
+    line-height: 1.55;
     margin-bottom: 25px;
+    color: #3a3228;
 }
 
 .status {
     font-size: 15px;
     font-style: italic;
-    color: #8a7a62;
-    margin-top: 10px;
+    color: #8b7c66;
+    margin-bottom: 30px;
 }
 
-.footer {
-    margin-top: 40px;
-    font-size: 15px;
-}
-
-.footer a {
-    color: #5c4e3b;
+/* CONTACT */
+.contact a {
+    font-weight: 500;
+    color: #5a4e3c;
     text-decoration: none;
+    font-size: 16px;
+}
+
+.contact a:hover {
+    text-decoration: underline;
+}
+
+/* FOOTER */
+footer {
+    margin-top: 60px;
+    font-size: 14px;
+    color: #7d705f;
+}
+
+/* FADE-IN ANIMATION */
+.fade {
+    opacity: 0;
+    animation: fadeIn 1.4s ease forwards;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(5px); }
+    to   { opacity: 1; transform: translateY(0px); }
+}
+
+/* MOBILE */
+@media (max-width: 600px) {
+    .brand {
+        font-size: 38px;
+    }
+    .tagline {
+        font-size: 18px;
+    }
+    .desc {
+        font-size: 17px;
+    }
 }
