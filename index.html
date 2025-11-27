@@ -1,70 +1,211 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Prairie Labs</title>
 
-    <!-- SEO -->
-    <meta name="description" content="Prairie Labs builds simulation-driven software. Intelligence, open by design.">
-    <meta property="og:title" content="Prairie Labs">
-    <meta property="og:description" content="Simulation-driven software. Intelligence, open by design.">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://prairielabs.ai">
-    <meta property="og:image" content="https://prairielabs.ai/og-image.png">
+    <meta name="description" content="Prairie Labs builds simulation-driven software. Intelligence, open by design." />
+    <meta property="og:title" content="Prairie Labs" />
+    <meta property="og:description" content="Simulation-driven software. Intelligence, open by design." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://prairielabs.ai" />
 
-    <!-- Favicon (drop your favicon later) -->
-    <link rel="icon" href="/favicon.ico">
+    <link rel="icon" href="/favicon.png" />
 
-    <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Lora:wght@400;500&display=swap" rel="stylesheet">
-    
-    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Lora:wght@400;500&display=swap"
+        rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./style.css" />
 </head>
 
 <body>
 
     <!-- PARALLAX BACKGROUND -->
     <div class="bg bg-back"></div>
+    <div class="bg bg-mid"></div>
     <div class="bg bg-front"></div>
 
-    <header class="fade">
-        <div class="logo-mark">
-            <!-- INLINE WHEAT SVG -->
-            <svg class="wheat" viewBox="0 0 80 160" xmlns="http://www.w3.org/2000/svg">
-                <path class="stem" d="M40 20 L40 150" stroke-width="4" stroke-linecap="round"/>
-                <path class="leaf" d="M40 40 C10 55, 10 75, 40 90" stroke-width="3" fill="none" />
-                <path class="leaf" d="M40 60 C70 75, 70 95, 40 110" stroke-width="3" fill="none" />
-                <path class="grain" d="M40 20 L34 30 L40 40 L46 30 Z" />
-                <path class="grain" d="M40 35 L34 45 L40 55 L46 45 Z" />
-                <path class="grain" d="M40 50 L34 60 L40 70 L46 60 Z" />
+    <!-- NAV -->
+    <header class="site-header fade">
+        <a href="#top" class="brand-mark">
+            <svg class="wheat-small" viewBox="0 0 80 160">
+                <path class="stem" d="M40 25 L40 150"/>
+                <path class="grain" d="M40 25 L34 35 L40 45 L46 35 Z"/>
+                <path class="grain" d="M40 42 L34 52 L40 62 L46 52 Z"/>
+            </svg>
+            <span class="brand-word">Prairie Labs</span>
+        </a>
+
+        <nav class="nav-links">
+            <a href="#product">Product</a>
+            <a href="#roadmap">Roadmap</a>
+            <a href="#about">About</a>
+            <a href="#press">Press</a>
+            <a href="#jobs">Jobs</a>
+        </nav>
+
+        <button id="modeToggle" class="mode-toggle">☀️</button>
+    </header>
+
+    <!-- HERO -->
+    <section id="top" class="hero-main fade">
+        <div class="hero-logo">
+            <svg class="wheat" viewBox="0 0 80 160">
+                <path class="stem" d="M40 20 L40 150"/>
+                <path class="leaf" d="M40 40 C10 55, 10 75, 40 90"/>
+                <path class="leaf" d="M40 60 C70 75, 70 95, 40 110"/>
+                <path class="grain" d="M40 20 L33 32 L40 44 L47 32 Z"/>
+                <path class="grain" d="M40 38 L33 50 L40 62 L47 50 Z"/>
+                <path class="grain" d="M40 56 L33 68 L40 80 L47 68 Z"/>
             </svg>
         </div>
 
-        <h1 class="brand">Prairie Labs</h1>
-        <h2 class="tagline">Intelligence, Open by Design</h2>
-    </header>
-
-    <main class="fade">
-        <p class="desc">
-            Prairie Labs builds simulation-driven software designed to help people understand,
-            navigate, and shape complex systems. Our first product is currently in development.
+        <h1 class="hero-title">Intelligence, Open by Design.</h1>
+        <p class="hero-subtitle">
+            Prairie Labs builds simulation-driven software that makes complex systems feel clear,
+            legible, and playable.
         </p>
 
-        <hr class="divider">
-
-        <p class="status">More coming soon.</p>
-
-        <div class="contact">
-            <a href="mailto:hello@prairielabs.ai">hello@prairielabs.ai</a>
+        <div class="hero-cta-row">
+            <a href="#product" class="btn-primary">Explore the first product</a>
+            <a href="mailto:hello@prairielabs.ai" class="btn-ghost">Contact</a>
         </div>
-    </main>
+    </section>
 
-    <footer class="fade">
-        <p>© 2025 Prairie Labs, Inc. All rights reserved.</p>
+    <!-- PRODUCT -->
+    <section id="product" class="section fade">
+        <h2 class="section-title">Our First Product</h2>
+        <p class="section-desc">
+            A text-native historical simulation set in the Roman world, built for replayability, depth, and virality.
+        </p>
+
+        <div class="pillars">
+            <div class="pillar">
+                <h4>Text-native</h4>
+                <p>Fast, frictionless, and infinitely replayable.</p>
+            </div>
+            <div class="pillar">
+                <h4>System-deep</h4>
+                <p>A tuned simulation engine beneath every choice.</p>
+            </div>
+            <div class="pillar">
+                <h4>Built to scale</h4>
+                <p>Extensible into strategy, education, and scenario training.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ROADMAP -->
+    <section id="roadmap" class="section fade">
+        <h2 class="section-title">Roadmap</h2>
+        <div class="roadmap">
+            <div class="roadmap-item">
+                <h4>Phase 1 — Pleb Life</h4>
+                <p>Launch text-based simulation and prove engagement loop.</p>
+            </div>
+            <div class="roadmap-item">
+                <h4>Phase 2 — Rome’s Dilemma</h4>
+                <p>Macro-level scenario engine: governance, trade, war, consequence.</p>
+            </div>
+            <div class="roadmap-item">
+                <h4>Phase 3 — Prairie Platform</h4>
+                <p>A simulation engine that scales beyond games.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section fade">
+        <h2 class="section-title">About Prairie Labs</h2>
+        <p class="section-desc">
+            Prairie is a simulation company. We build for clarity, not spectacle — systems over noise, legibility over flash.
+        </p>
+        <p class="body-block">
+            The goal is simple: make powerful simulations accessible to more than institutions.
+            We start with history. We scale into broader systems.
+        </p>
+        <p class="founder-signature">— Callahan Stroud, Founder & CEO</p>
+    </section>
+
+    <!-- PRESS -->
+    <section id="press" class="section fade">
+        <h2 class="section-title">Press & Media</h2>
+        <p class="section-desc">
+            For press inquiries, partnerships, or early briefings, contact our team.
+        </p>
+
+        <div class="press-grid">
+            <div class="press-card">
+                <h4>Contact</h4>
+                <p>Email: <a href="mailto:press@prairielabs.ai">press@prairielabs.ai</a></p>
+            </div>
+            <div class="press-card">
+                <h4>Topics</h4>
+                <p>Simulation, systems thinking, historical design, interactive education.</p>
+            </div>
+            <div class="press-card">
+                <h4>Assets (coming soon)</h4>
+                <ul>
+                    <li>Logos & brand marks</li>
+                    <li>Product screenshots</li>
+                    <li>Founder bio</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- JOBS -->
+    <section id="jobs" class="section fade">
+        <h2 class="section-title">Jobs</h2>
+        <p class="section-desc">
+            Prairie is early. We hire slowly, deliberately, and value systems thinkers across disciplines.
+        </p>
+        <p class="body-block">
+            If you build simulations, design experiences, or work in education, strategy, or
+            infrastructure — reach out.
+        </p>
+        <p class="body-block">
+            Email: <a href="mailto:jobs@prairielabs.ai">jobs@prairielabs.ai</a>
+        </p>
+    </section>
+
+    <!-- SIGNUP -->
+    <section id="signup" class="section fade signup">
+        <h2 class="section-title">Get updates</h2>
+        <p class="section-desc">We’ll only email when there's something real.</p>
+
+        <form onsubmit="event.preventDefault(); alert('Thanks — you’re on the list.');" class="signup-form">
+            <input type="email" placeholder="email@domain.com" required />
+            <button type="submit">Notify Me</button>
+        </form>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="site-footer fade">
+        <p>© 2025 Prairie Labs, Inc.</p>
     </footer>
+
+    <!-- DARK MODE -->
+    <script>
+        const root = document.documentElement;
+        const toggle = document.getElementById("modeToggle");
+        
+        if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
+            root.setAttribute("data-theme", "dark");
+            toggle.textContent = "🌙";
+        }
+
+        toggle.addEventListener("click", () => {
+            const next = root.getAttribute("data-theme") === "light" ? "dark" : "light";
+            root.setAttribute("data-theme", next);
+            toggle.textContent = next === "dark" ? "🌙" : "☀️";
+        });
+    </script>
 
 </body>
 </html>
