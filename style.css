@@ -12,6 +12,7 @@
     --subtext: #675b4a;
     --button-bg: #2e261c;
     --button-text: #f9f6ef;
+    --rule: rgba(0,0,0,0.08);
 }
 
 /* PAGE BASE */
@@ -23,39 +24,49 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    text-align: center;
-    padding: 40px;
+    padding: 40px 24px;
 }
 
 /* WRAPPER */
 .wrapper {
-    font-size: 1.32rem;
-    line-height: 2.1rem;
-    max-width: 680px;
+    max-width: 620px;
+    width: 100%;
+    text-align: center;
+    line-height: 1.55;
+}
+
+/* FADE-IN ANIMATION */
+.fade-in {
+    opacity: 0;
+    animation: fadeIn 0.85s ease-out forwards;
+}
+
+@keyframes fadeIn {
+    to { opacity: 1; }
 }
 
 /* HEADLINE */
 .headline {
-    font-size: 3.6rem;
+    font-size: 3.55rem;
     font-weight: 700;
-    margin-bottom: 14px;
-    letter-spacing: -0.5px;
+    margin-bottom: 16px;
+    letter-spacing: -0.6px;
 }
 
 /* TAGLINE */
 .tagline {
-    font-size: 1.35rem;
+    font-size: 1.33rem;
     color: var(--subtext);
-    margin-bottom: 34px;
+    margin-bottom: 40px;
+    letter-spacing: -0.2px;
 }
 
 /* BUTTON GROUP */
 .buttons {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    gap: 16px;
-    margin-bottom: 28px;
+    gap: 18px;
+    margin-bottom: 48px;
 }
 
 /* BUTTON STYLE */
@@ -65,18 +76,19 @@ body {
     gap: 14px;
     background: var(--button-bg);
     color: var(--button-text);
-    padding: 14px 30px;
+    padding: 15px 34px;
     border-radius: 14px;
     font-size: 1.18rem;
-    font-weight: 500;
+    font-weight: 600;
     text-decoration: none;
-    transition: all 0.22s ease;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.15);
+    transition: all 0.25s ease;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.13);
+    -webkit-font-smoothing: antialiased;
 }
 
 .play-btn:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 4px 8px rgba(0,0,0,0.18);
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.16);
     opacity: 0.92;
 }
 
@@ -86,20 +98,41 @@ body {
     display: block;
 }
 
-/* CONTACT */
+/* CONTACT SECTION */
 .contact {
-    margin-top: 34px;
+    padding-top: 28px;
+    border-top: 1px solid var(--rule);
     font-size: 1.12rem;
-    line-height: 1.8rem;
+    line-height: 1.9rem;
+}
+
+.contact-label {
+    font-size: 1rem;
+    color: var(--subtext);
+    margin-bottom: 6px;
 }
 
 .contact a {
     color: var(--text);
     text-decoration: none;
-    border-bottom: 1px solid rgba(0,0,0,0.22);
+    border-bottom: 1px solid rgba(0,0,0,0.18);
     padding-bottom: 2px;
 }
 
 .contact a:hover {
     opacity: 0.65;
+}
+
+/* RESPONSIVE TUNING */
+@media (max-width: 500px) {
+    .headline {
+        font-size: 2.8rem;
+    }
+    .tagline {
+        font-size: 1.25rem;
+    }
+    .play-btn {
+        padding: 14px 26px;
+        font-size: 1.1rem;
+    }
 }
