@@ -23,7 +23,6 @@
             --subtext: #675b4a;
             --bg1: #f9f6ef;
             --wheat-stroke: #4f412f;
-            --wheat-fill: #c6ab7d;
         }
 
         :root[data-theme="dark"] {
@@ -31,7 +30,6 @@
             --subtext: #d9ccb7;
             --bg1: #1d1a16;
             --wheat-stroke: #d9ccb7;
-            --wheat-fill: #8b7c66;
         }
 
         /* MAIN CENTER LAYOUT */
@@ -56,11 +54,22 @@
             margin-bottom: 32px;
         }
 
-        .under {
+        .flare {
+            width: 80px;
+            height: 2px;
+            background: var(--wheat-stroke);
+            opacity: 0.28;
+            margin: 28px auto 40px auto;
+            border-radius: 2px;
+        }
+
+        .about {
             font-size: 1.15rem;
             color: var(--subtext);
-            margin-bottom: 60px;
-            opacity: 0.9;
+            line-height: 1.65;
+            max-width: 640px;
+            margin: 0 auto 48px auto;
+            opacity: 0.92;
         }
 
         /* CONTACT SECTION */
@@ -81,34 +90,31 @@
         .contact a:hover {
             opacity: 0.6;
         }
-
-        /* SUBTLE FLAIR */
-        .flare {
-            width: 80px;
-            height: 2px;
-            background: var(--wheat-stroke);
-            opacity: 0.25;
-            margin: 28px auto 40px auto;
-            border-radius: 2px;
-        }
-
     </style>
 </head>
 
 <body>
 
     <div class="center">
-        <div class="headline">Prairie Labs<span style="font-size:1.6rem; vertical-align:super;"></span></div>
+        <div class="headline">Prairie Labs</div>
         <div class="sub">Simulation, Open by Design</div>
 
         <div class="flare"></div>
 
-        <div class="under">This site is currently under construction.</div>
+        <div class="about">
+            Prairie Labs builds structured, deterministic simulations using large language models. 
+            Our technology transforms LLMs from chat interfaces into stateful engines—capable of 
+            running worlds, systems, and interactive experiences entirely in text.  
+            <br><br>
+            We are currently preparing the Prairie Engine specification, core simulations, and our 
+            initial research release. A full site experience is coming soon.
+        </div>
 
         <div class="contact">
             <div><a href="mailto:callahan@prairielabs.ai">callahan@prairielabs.ai</a></div>
             <div><a href="mailto:hello@prairielabs.ai">hello@prairielabs.ai</a></div>
             <div><a href="mailto:invest@prairielabs.ai">invest@prairielabs.ai</a></div>
+            <div><a href="https://www.linkedin.com/company/110206508/admin/dashboard/" target="_blank">LinkedIn</a></div>
         </div>
     </div>
 
