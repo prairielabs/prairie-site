@@ -36,21 +36,49 @@
             margin-bottom: 28px;
         }
 
-        a {
+        /* BUTTON */
+        .play-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            background: #2e261c;
+            color: #f9f6ef;
+            padding: 12px 22px;
+            border-radius: 12px;
+            font-size: 1.15rem;
+            font-weight: 500;
+            text-decoration: none;
+            border: none;
+            transition: all 0.18s ease;
+        }
+
+        .play-btn:hover {
+            opacity: 0.85;
+            transform: translateY(-1px);
+        }
+
+        .play-btn img {
+            height: 22px;     /* tiny + tasteful */
+            width: auto;
+            display: block;
+        }
+
+        /* CONTACT */
+        .contact {
+            margin-top: 32px;
+            font-size: 1.15rem;
+            line-height: 1.8rem;
+        }
+
+        .contact a {
             color: #2e261c;
             text-decoration: none;
             border-bottom: 1px solid rgba(0,0,0,0.2);
             padding-bottom: 2px;
         }
 
-        a:hover {
+        .contact a:hover {
             opacity: 0.6;
-        }
-
-        .contact {
-            margin-top: 32px;
-            font-size: 1.15rem;
-            line-height: 1.8rem;
         }
     </style>
 </head>
@@ -60,11 +88,13 @@
         <div class="headline">Prairie Labs</div>
         <div class="tagline">Simulation, Open by Design</div>
 
-        <div>
-            <a href="https://chatgpt.com/g/g-6930fdbf8604819189b83edb15c65a65-pleb-life" target="_blank">
-                Play Pleb Life →
-            </a>
-        </div>
+        <!-- PLAY BUTTON WITH LOGO -->
+        <a class="play-btn"
+           href="https://chatgpt.com/g/g-6930fdbf8604819189b83edb15c65a65-pleb-life"
+           target="_blank">
+            <img src="public/images/pleb-life-logo.png" alt="Pleb Life logo">
+            Play Pleb Life →
+        </a>
 
         <div class="contact">
             <div><a href="mailto:callahan@prairielabs.ai">callahan@prairielabs.ai</a></div>
