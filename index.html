@@ -36,7 +36,15 @@
             margin-bottom: 28px;
         }
 
-        /* BUTTON */
+        /* BUTTONS */
+        .buttons {
+            display: flex;
+            flex-direction: column; /* stack vertically */
+            align-items: center;
+            gap: 14px; /* space between computer + mobile buttons */
+            margin-bottom: 18px;
+        }
+
         .play-btn {
             display: inline-flex;
             align-items: center;
@@ -50,7 +58,6 @@
             text-decoration: none;
             border: none;
             transition: all 0.18s ease;
-            margin-bottom: 14px; /* spacing between desktop + mobile buttons */
         }
 
         .play-btn:hover {
@@ -59,7 +66,7 @@
         }
 
         .play-btn img {
-            height: 32px; /* nice and bold */
+            height: 32px;
             width: auto;
             display: block;
         }
@@ -89,21 +96,26 @@
         <div class="headline">Prairie Labs</div>
         <div class="tagline">Simulation, Open by Design</div>
 
-        <!-- COMPUTER VERSION -->
-        <a class="play-btn"
-           href="https://chatgpt.com/g/g-6930fdbf8604819189b83edb15c65a65-pleb-life"
-           target="_blank">
-            <img src="images/pleb-life-logo.png" alt="Pleb Life logo">
-            Play Pleb Life (Computer) →
-        </a>
+        <!-- BUTTON STACK -->
+        <div class="buttons">
 
-        <!-- MOBILE VERSION (NEW) -->
-        <a class="play-btn"
-           href="https://chatgpt.com/g/g-6933650995908191807e752096a56329-pleb-life-mobile"
-           target="_blank">
-            <img src="images/pleb-life-logo.png" alt="Pleb Life logo">
-            Play Pleb Life (Mobile) →
-        </a>
+            <!-- COMPUTER VERSION -->
+            <a class="play-btn"
+               href="https://chatgpt.com/g/g-6930fdbf8604819189b83edb15c65a65-pleb-life"
+               target="_blank">
+                <img src="images/pleb-life-logo.png" alt="Pleb Life Computer Logo">
+                Play Pleb Life (Computer) →
+            </a>
+
+            <!-- MOBILE VERSION -->
+            <a class="play-btn"
+               href="https://chatgpt.com/g/g-6933650995908191807e752096a56329-pleb-life-mobile"
+               target="_blank">
+                <img src="images/pleb-life-logo-mobile.png" alt="Pleb Life Mobile Logo">
+                Play Pleb Life (Mobile) →
+            </a>
+
+        </div>
 
         <div class="contact">
             <div><a href="mailto:callahan@prairielabs.ai">callahan@prairielabs.ai</a></div>
