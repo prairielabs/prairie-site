@@ -3,120 +3,74 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Prairie Labs — In Progress</title>
+    <title>Prairie Labs</title>
     <style>
-        /* RESET */
         * { margin: 0; padding: 0; box-sizing: border-box; }
 
         body {
             font-family: "Inter", sans-serif;
-            background: var(--bg1);
-            color: var(--text);
+            background: #f9f6ef;
+            color: #2e261c;
             min-height: 100vh;
             display: flex;
-            flex-direction: column;
             justify-content: center;
-        }
-
-        :root[data-theme="light"] {
-            --text: #2e261c;
-            --subtext: #675b4a;
-            --bg1: #f9f6ef;
-            --wheat-stroke: #4f412f;
-        }
-
-        :root[data-theme="dark"] {
-            --text: #f2eadf;
-            --subtext: #d9ccb7;
-            --bg1: #1d1a16;
-            --wheat-stroke: #d9ccb7;
-        }
-
-        /* MAIN CENTER LAYOUT */
-        .center {
-            max-width: 800px;
-            margin: auto;
+            align-items: center;
             text-align: center;
             padding: 40px;
         }
 
+        .wrapper {
+            font-size: 1.35rem;
+            line-height: 2.2rem;
+        }
+
         .headline {
-            font-size: 4.2rem;
+            font-size: 3.4rem;
             font-weight: 700;
-            letter-spacing: 0.5px;
-            margin-bottom: 14px;
+            margin-bottom: 12px;
         }
 
-        .sub {
-            font-size: 1.45rem;
-            color: var(--subtext);
-            font-weight: 400;
-            margin-bottom: 32px;
+        .tagline {
+            font-size: 1.4rem;
+            color: #675b4a;
+            margin-bottom: 28px;
         }
 
-        .flare {
-            width: 80px;
-            height: 2px;
-            background: var(--wheat-stroke);
-            opacity: 0.28;
-            margin: 28px auto 40px auto;
-            border-radius: 2px;
-        }
-
-        .about {
-            font-size: 1.15rem;
-            color: var(--subtext);
-            line-height: 1.65;
-            max-width: 640px;
-            margin: 0 auto 48px auto;
-            opacity: 0.92;
-        }
-
-        /* CONTACT SECTION */
-        .contact {
-            font-size: 1.05rem;
-            line-height: 1.8;
-            margin-top: 20px;
-            opacity: 0.95;
-        }
-
-        .contact a {
-            color: var(--text);
+        a {
+            color: #2e261c;
             text-decoration: none;
-            border-bottom: 1px solid rgba(0,0,0,0.12);
+            border-bottom: 1px solid rgba(0,0,0,0.2);
             padding-bottom: 2px;
         }
 
-        .contact a:hover {
+        a:hover {
             opacity: 0.6;
+        }
+
+        .contact {
+            margin-top: 32px;
+            font-size: 1.15rem;
+            line-height: 1.8rem;
         }
     </style>
 </head>
 
 <body>
-
-    <div class="center">
+    <div class="wrapper">
         <div class="headline">Prairie Labs</div>
-        <div class="sub">Simulation, Open by Design</div>
+        <div class="tagline">Simulation, Open by Design</div>
 
-        <div class="flare"></div>
-
-        <div class="about">
-            Prairie Labs builds structured, deterministic simulations using large language models. 
-            Our technology transforms LLMs from chat interfaces into stateful engines—capable of 
-            running worlds, systems, and interactive experiences entirely in text.  
-            <br><br>
-            We are currently preparing the Prairie Engine specification, core simulations, and our 
-            initial research release. A full site experience is coming soon.
+        <div>
+            <a href="https://chatgpt.com/g/g-6930fdbf8604819189b83edb15c65a65-pleb-life" target="_blank">
+                Play Pleb Life →
+            </a>
         </div>
 
         <div class="contact">
             <div><a href="mailto:callahan@prairielabs.ai">callahan@prairielabs.ai</a></div>
             <div><a href="mailto:hello@prairielabs.ai">hello@prairielabs.ai</a></div>
             <div><a href="mailto:invest@prairielabs.ai">invest@prairielabs.ai</a></div>
-            <div><a href="https://www.linkedin.com/company/110206508/admin/dashboard/" target="_blank">LinkedIn</a></div>
         </div>
     </div>
-
 </body>
 </html>
