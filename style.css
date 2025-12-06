@@ -64,13 +64,26 @@ body {
     width: 80%;
     max-width: 320px;
     aspect-ratio: 1 / 2;
+
+    /* Oval shape */
+    border-radius: 999px;
+    border: 1px solid rgba(198, 171, 125, 0.35);
+    background-color: rgba(249, 246, 239, 0.3);
+
+    /* Logo inside the oval */
     background-image: url("images/wheat-blade.png");
-    background-size: contain;
-    background-repeat: no-repeat;
+    background-size: 70% auto; /* tweak 60–80% for size */
     background-position: center;
-    opacity: 0.55; /* tweak between .35 and .65 */
-    filter: grayscale(20%) blur(0.2px);
+    background-repeat: no-repeat;
+
+    /* Soft minimalist styling */
+    opacity: 0.55;
+    filter: grayscale(10%) blur(0.15px);
+
+    /* Optional subtle glow (looks very good) */
+    box-shadow: 0 0 40px rgba(198, 171, 125, 0.18);
 }
+
 
 
 /* ANIMATION */
