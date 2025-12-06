@@ -64,15 +64,14 @@ body {
     width: 80%;
     max-width: 320px;
     aspect-ratio: 1 / 2;
-    border-radius: 999px;
-    background:
-        linear-gradient(135deg, rgba(198, 171, 125, 0.22), rgba(249, 246, 239, 0)) border-box,
-        radial-gradient(circle at 20% 0%, rgba(198, 171, 125, 0.15), transparent 55%),
-        radial-gradient(circle at 80% 100%, rgba(198, 171, 125, 0.1), transparent 60%);
-    border: 1px solid rgba(198, 171, 125, 0.35);
-    opacity: 0.45;
-    filter: blur(0.1px);
+    background-image: url("images/wheat-blade.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0.55; /* tweak between .35 and .65 */
+    filter: grayscale(20%) blur(0.2px);
 }
+
 
 /* ANIMATION */
 @keyframes fadeIn {
