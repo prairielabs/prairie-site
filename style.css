@@ -213,16 +213,26 @@ body {
 }
 
 .socials img {
-    width: 22px;
-    height: 22px;
-    opacity: 0.85;
-    transition: opacity 0.2s ease, transform 0.2s ease;
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+    object-position: center;
+
+    /* Optical balancing */
+    opacity: 0.75;                 /* reduces heavy LinkedIn fill weight */
+    filter: brightness(0.9);       /* elegantly softens both */
+    transition:
+        opacity 0.2s ease,
+        transform 0.2s ease,
+        filter 0.2s ease;
 }
 
 .socials img:hover {
     opacity: 1;
+    filter: brightness(1);
     transform: translateY(-1px);
 }
+
 
 
 /* FOOTER */
