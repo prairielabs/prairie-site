@@ -212,6 +212,10 @@ body {
     margin-top: 10px;
 }
 
+.socials {
+    margin-bottom: 24px;   /* or 32px */
+}
+
 .socials img {
     width: 20px;
     height: 20px;
