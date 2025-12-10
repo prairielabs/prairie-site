@@ -263,3 +263,30 @@ body {
         opacity: 0.35;
     }
 }
+
+/* MOBILE WHEAT MARK */
+.mobile-wheat {
+    display: none;
+    width: 140px;
+    height: 140px;
+    margin: 30px auto 0 auto;
+    border-radius: 999px;
+    border: 1px solid rgba(198, 171, 125, 0.25);
+    background-color: rgba(249, 246, 239, 0.35);
+    background-image: url("images/wheat-blade.png");
+    background-size: 60% auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.32;
+}
+
+/* MOBILE OVERRIDES */
+@media (max-width: 768px) {
+    .hero-right {
+        display: none; /* hide desktop wheat */
+    }
+
+    .mobile-wheat {
+        display: block;  /* show bottom wheat */
+    }
+}
