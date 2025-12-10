@@ -49,6 +49,9 @@ body {
     max-width: 560px;
     animation: fadeIn 0.7s ease-out forwards;
     opacity: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
 }
 
 /* RIGHT COLUMN (BRAND PANEL) */
@@ -59,50 +62,46 @@ body {
     align-items: center;
 }
 
-/* FAINT WHEAT / BRAND MARK PANEL */
+/* FAINT WHEAT / BRAND MARK PANEL (DESKTOP) */
 .wheat-mark {
-    width: 80%;
-    max-width: 320px;
+    width: 70%;
+    max-width: 260px;
     aspect-ratio: 1 / 2;
 
-    /* Oval shape */
     border-radius: 999px;
-    border: 1px solid rgba(198, 171, 125, 0.35);
-    background-color: rgba(249, 246, 239, 0.3);
+    border: 1px solid rgba(198, 171, 125, 0.3);
+    background-color: rgba(249, 246, 239, 0.35);
 
-    /* Logo inside the oval */
     background-image: url("images/wheat-blade.png");
-    background-size: 70% auto; /* tweak 60–80% for size */
+    background-size: 65% auto;
     background-position: center;
     background-repeat: no-repeat;
 
-    /* Soft minimalist styling */
-    opacity: 0.55;
-    filter: grayscale(10%) blur(0.15px);
+    opacity: 0.45;
+    filter: grayscale(10%) blur(0.1px);
 
-    /* Optional subtle glow (looks very good) */
-    box-shadow: 0 0 40px rgba(198, 171, 125, 0.18);
+    box-shadow: 0 0 32px rgba(198, 171, 125, 0.18);
 }
 
-
+/* MOBILE BRAND MARK */
+.mobile-wheat {
+    display: none;
+    width: 140px;
+    height: 140px;
+    margin: 24px auto 0 auto;
+    border-radius: 999px;
+    border: 1px solid rgba(198, 171, 125, 0.28);
+    background-color: rgba(249, 246, 239, 0.4);
+    background-image: url("images/wheat-blade.png");
+    background-size: 60% auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.3;
+}
 
 /* ANIMATION */
 @keyframes fadeIn {
     to { opacity: 1; }
-}
-
-/* BADGE */
-.badge {
-    display: inline-flex;
-    align-items: center;
-    padding: 5px 13px;
-    border-radius: 999px;
-    border: 1px solid rgba(0, 0, 0, 0.06);
-    font-size: 0.8rem;
-    letter-spacing: 0.08em;
-    text-transform: uppercase;
-    color: var(--subtext);
-    margin-bottom: 18px;
 }
 
 /* HEADLINE / TAGLINE / VISION */
@@ -125,15 +124,30 @@ body {
     color: var(--subtext);
     opacity: 0.95;
     margin-bottom: 28px;
-    max-width: 30rem;
+    max-width: 32rem;
 }
 
 /* BUTTON GROUP */
 .buttons {
     display: flex;
     flex-direction: column;
-    gap: 10px;
-    margin-bottom: 18px;
+    gap: 12px;
+    margin-bottom: 20px;
+}
+
+.game-block {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+/* GAME BADGE */
+.game-badge {
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    color: var(--subtext);
+    opacity: 0.9;
 }
 
 /* BUTTONS — SOFT MINIMALIST */
@@ -206,6 +220,39 @@ body {
     opacity: 0.7;
 }
 
+/* SOCIALS */
+.socials {
+    margin-top: 8px;
+    margin-bottom: 18px;
+    font-size: 0.92rem;
+    color: var(--subtext);
+}
+
+.social-label {
+    font-size: 0.78rem;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    color: var(--subtext);
+    margin-bottom: 4px;
+}
+
+.social-links {
+    display: flex;
+    gap: 16px;
+}
+
+.socials a {
+    color: var(--text);
+    text-decoration: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.16);
+    padding-bottom: 1px;
+    font-size: 0.9rem;
+}
+
+.socials a:hover {
+    opacity: 0.75;
+}
+
 /* FOOTER */
 .footer {
     font-size: 0.82rem;
@@ -222,7 +269,7 @@ body {
 
     .hero {
         grid-template-columns: 1fr;
-        gap: 28px;
+        gap: 24px;
     }
 
     .hero-left {
@@ -246,6 +293,19 @@ body {
 
     .buttons {
         align-items: center;
+        width: 100%;
+    }
+
+    .game-block {
+        width: 100%;
+        max-width: 360px;
+        align-items: center;
+    }
+
+    .game-badge {
+        text-align: left;
+        width: 100%;
+        max-width: 360px;
     }
 
     .play-btn {
@@ -255,11 +315,10 @@ body {
     }
 
     .hero-right {
-        order: -1;
+        display: none;
     }
 
-    .wheat-mark {
-        max-width: 220px;
-        opacity: 0.35;
+    .mobile-wheat {
+        display: block;
     }
 }
