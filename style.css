@@ -304,6 +304,9 @@ body {
     .socials {
         justify-content: center;
     }
+        .footer {
+        margin-top: 32px;
+    }
 }
 
 /* MOBILE WHEAT MARK */
