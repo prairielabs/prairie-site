@@ -290,6 +290,9 @@ body {
         max-width: 220px;
         opacity: 0.35;
     }
+    .socials {
+        justify-content: center;
+    }
 }
 
 /* MOBILE WHEAT MARK */
