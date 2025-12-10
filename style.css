@@ -245,6 +245,13 @@ body {
     opacity: 0.9;
 }
 
+.footer {
+    font-size: 0.82rem;
+    color: var(--subtext);
+    opacity: 0.9;
+    margin-top: 24px;   /* ← this forces spacing on mobile and desktop */
+}
+
 /* RESPONSIVE — MOBILE: ONE COLUMN, CENTERED */
 @media (max-width: 768px) {
     body {
